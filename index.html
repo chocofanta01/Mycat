@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예비 개발자 이재혁의 포트폴리오</title>
+    <style>
+        body { font-family: 'Nanum Gothic', sans-serif; line-height: 1.6; color: #333; }
+        
+        header { text-align: center; padding: 60px 20px; background-color: #fcfcfc; border-bottom: 1px solid #eee; }
+        header h1 { font-size: 32px; margin-bottom: 10px; }
+        header p { color: #666; font-size: 18px; }
+
+        .section-title { text-align: center; margin-top: 60px; font-size: 28px; }
+        .intro { text-align: center; color: #777; margin-bottom: 40px; }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 100px auto;
+        }
+        .card { text-align: center; border: 1px solid #ddd; padding: 15px; border-radius: 10px; background: white; transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .card_img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; }
+        .card_title { font-size: 22px; font-weight: bold; margin: 15px 0; }
+        .card_button {
+            background-color: #333; color: white; padding: 10px 20px;
+            text-decoration: none; border-radius: 5px; display: inline-block;
+        }
+        .card_button:hover { background-color: #555; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>안녕하세요, 예비 개발자 이재혁 입니다. </h1>
+        <p>HTML, CSS, Git을 공부하며 만든 저의 첫 번째 프로젝트 페이지입니다.</p>
+    </header>
+
+    <h2 class="section-title">🐈 Project : 우리집 고양들 소개 사이트</h2>
+    <p class="intro"> CSS/HTML 레이아웃과 상세 페이지 연결을 구현한 첫번째 개인 프로젝트입니다.</p>
+
+    <div class="project-container">
+        <div class="card">
+            <img class="card_img" style="margin-top: 40px;" src="./img/navi_main.png">
+            <p class="card_title">나비</p>
+            <a href="navi.html" class="card_button">자세히 보기</a>
+        </div>
+        <div class="card">
+            <img class="card_img" style="margin-bottom: 40px;" src="./img/cheese_main.png">
+            <p class="card_title">치즈</p>
+            <a href="cheese.html" class="card_button">자세히 보기</a>
+        </div>
+        <div class="card">
+            <img class="card_img" style="margin-top: 10px;" src="./img/kong_main.png">
+            <p class="card_title">콩이</p>
+            <a href="kong.html" class="card_button" style="margin-top: 30px" >자세히 보기</a>
+        </div>
+    </div>
+
+</body>
+</html>
